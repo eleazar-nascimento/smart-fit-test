@@ -13,8 +13,8 @@ import Image from 'next/image'
 
 export function SearchGym() {
   const handleSearchGymLocations = async () => {
-    // const data = await getLocations()
-    // window.alert(data)
+    const data = await getLocations()
+    console.log(data)
   }
   return (
     <div className="w-full bg-white h-full flex items-center justify-center pb-12 min-[320px]:px-6">
@@ -39,6 +39,7 @@ export function SearchGym() {
                 radius="full"
                 className="text-gray-500 w-full pt-5 pb-5"
                 value="morning"
+                onValueChange={(value) => console.log(value)}
               >
                 Manhã
               </Checkbox>
