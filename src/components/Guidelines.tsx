@@ -3,7 +3,7 @@ import Image from 'next/image'
 export function Guidelines() {
   return (
     <div className="w-full bg-white  pb-12 flex justify-center items-center">
-      <div className="flex items-center justify-center gap-10 bg-gray-100 w-[900px] px-4 py-6">
+      <div className="flex lg:flex-row min-[320px]:flex-col items-center justify-center gap-10 bg-gray-100 lg:w-[900px] min-[320px]:w-[340px] px-4 py-6">
         <div className="flex flex-col items-center gap-4">
           <div className="text-base font-bold text-dark-grey">Máscara</div>
           <div className="flex gap-2">

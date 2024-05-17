@@ -1,6 +1,6 @@
 export function Title() {
   return (
-    <div className="bg-white w-full h-full flex flex-col items-center">
+    <div className="bg-white w-full h-full flex flex-col items-center min-[320px]:px-6">
       <div className="flex flex-col gap-3 max-w-[900px] py-16">
         <h1 className="text-dark-grey font-bold text-4xl max-w-72 leading-tight">
           REABERTURA SMART FIT
