@@ -27,7 +27,10 @@ export async function getLocations() {
   return response.json()
 }
 
-export function verifyLocked(data: LocationProps[], locked: boolean) {
+export function verifyLocked(
+  data: LocationProps[] | undefined,
+  locked: boolean,
+) {
   const filterData = data?.filter(
     (location: LocationProps) => location.opened === locked,
   )

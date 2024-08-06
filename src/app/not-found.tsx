@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import Link from 'next/link'
+// import Image from 'next/image'
+// import Link from 'next/link'
 
 export default function NotFound() {
   return (
@@ -9,7 +9,8 @@ export default function NotFound() {
           <div className="absolute">
             <div className="">
               <h1 className="my-2 text-gray-800 font-bold text-2xl">
-                Looks like you've found the doorway to the great nothing
+                Looks like you{`&apos;`}ve found the doorway to the great
+                nothing
               </h1>
               <p className="my-2 text-gray-800">
                 Sorry about that! Please visit our hompage to get where you need

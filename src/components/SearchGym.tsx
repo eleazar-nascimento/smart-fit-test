@@ -1,7 +1,7 @@
 'use client'
 import {
   LocationProps,
-  LocationsProps,
+  // LocationsProps,
   verifyLocked,
 } from '@/api/get-locations'
 import {
@@ -16,16 +16,16 @@ import Image from 'next/image'
 import { useCallback, useEffect, useState } from 'react'
 import { RadioGroup, RadioGroupItem } from './ui/radio-group'
 import { useLocation } from '@/api/use-locations'
-import useSWR from 'swr'
+// import useSWR from 'swr'
 
 export function SearchGym() {
   const [selected, setSelected] = useState<string>('6:00 às 12:00')
-  const [listUnits, setListUnits] = useState<LocationProps[]>([])
+  const [listUnits, setListUnits] = useState<LocationProps[] | undefined>([])
   const [hasLocked, setHasLocked] = useState<boolean>(false)
-  const { data, error, isLoading } = useSWR<LocationsProps[]>(
-    'locations',
-    listUnits,
-  )
+  // const { data, error, isLoading } = useSWR<LocationsProps[]>(
+  //   'locations',
+  //   listUnits,
+  // )
 
   const { locations } = useLocation()
 
