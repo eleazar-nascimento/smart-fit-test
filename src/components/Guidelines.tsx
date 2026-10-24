@@ -28,12 +28,12 @@ export function Guidelines() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-4">
-          <div className="text-base font-bold text-dark-grey">Máscara</div>
+          <div className="text-base font-bold text-dark-grey">Toalha</div>
           <div className="flex gap-5">
             <div className="flex flex-col gap-2 items-center">
               <Image
                 src="/images/required-towel.png"
-                alt="máscara obrigatório"
+                alt="Toalha obrigatória"
                 width={52}
                 height={52}
               />
@@ -42,7 +42,7 @@ export function Guidelines() {
             <div className="flex flex-col gap-2 items-center">
               <Image
                 src="/images/recommended-towel.png"
-                alt="máscara Recomendado"
+                alt="Toalha recomendada"
                 width={52}
                 height={52}
               />
